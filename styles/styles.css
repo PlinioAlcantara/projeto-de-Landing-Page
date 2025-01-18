@@ -1,135 +1,125 @@
-body{
+body {
     background-color: white;
     color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
-
 }
 
-header{
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-
+    align-items: flex-start;
+    padding: 10px;
+    margin-bottom: 30px;
 }
 
-#tittle{
+#tittle {
+    display: flex;
     flex-direction: column;
-    line-height: 10px;
-
+    line-height: 1.5;
+    margin-top: 20px;
 }
 
-li{
+li {
     display: inline-block;
-    margin: 20px;
+    margin: 10px;
 }
 
-a{
+a {
     color: black;
+    text-decoration: none;
 }
 
-a:hover{
-    color: green;
+a:hover {
+    color: #e9f035;
     transition: 0.3s all;
 }
-#inscreva-se-btn{
-    border: 2px solid green;
+
+#inscreva-se-btn {
+    border: 2px solid #e9f035;
     padding: 10px;
     border-radius: 15px;
-
-}
-#inscreva-se-btn:hover{
-    background-color: green;
     color: black;
-    
 }
 
-h1{
-    height: 15px;
-    
-
+#inscreva-se-btn:hover {
+    background-color: #e9f035;
+    color: black;
+    transition: 0.3s all;
 }
-main{
+
+h1 {
+    margin: 0;
+    line-height: 1.5;
+}
+
+main {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
-
+    gap: 20px;
+    margin-top: 30px;
 }
 
-h2{
+h2 {
     font-size: 56px;
-    line-height: 10px;
+    line-height: 1.2;
     margin-top: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-span{
-    margin-top: 90px;
-    color: green;
-}
-p{
-    line-height: 20px;
-    max-width: 500px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-img{
-    width: 500x;
-    height: 500px;
-    margin-left: 180px;
-    margin-top: -75px;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-
-}
-
-input[type="submit"] {
-    height: 50px;
-    width: 50%;
-    background-color: green;
-    color: black;
     font-weight: bold;
 }
 
-input[type="submit"]:hover {
+span {
+    color: #e9f035;
+}
+
+p {
+    line-height: 1.6;
+    max-width: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    margin-left: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    margin-top: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button[type="button"] {
+    height: 50px;
+    background-color: #e9f035;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
     cursor: pointer;
 }
 
-input{
-    margin-top: 25px;
-    height: 15px;
-    padding: 15px;
-    border-radius: 20px;
-    border: none;
-    font-size: 15px;
+button[type="button"]:hover {
+    background-color: #cbd62e;
 }
 
-#senha {
-    margin-top: 25px;
-    height: 15px;
-    padding: 15px;
-    border-radius: 20px;
-    border: none;
-    font-size: 15px;
-}
-
-#mostrarSenha {
-    display: none; 
-}
-
-#toggleSenha {
-    margin-left: 15px;
-    cursor: pointer;
-}
-
-#mostrarSenha:checked ~ #senha {
-    -webkit-text-security: none; 
-    text-decoration: none; 
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: -5px;
 }

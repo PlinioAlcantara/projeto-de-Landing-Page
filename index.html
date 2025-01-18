@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link href="styles/styles.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="formValidation.js"></script>
 </head>
 <body>
     <header>
-        <div id = "tittle">
-            <h1><span>
-                DevReboCar
-            </span></h1>
+        <div id="tittle">
+            <h1><span>DevReboCar</span></h1>
             <h1>Sua empresa de seguros automotivos</h1>
         </div>
 
@@ -20,28 +18,29 @@
             <a href="#"><li>Início</li></a>
             <a href="#"><li>Sobre nós</li></a>
             <a href="#"><li>Contato</li></a>
-            <a href="#" id ="inscreva-se-btn"><li>Já tem uma conta?</li></a>
+            <a href="#" id="inscreva-se-btn"><li>Já tem uma conta?</li></a>
         </ul>
     </header>
     <main>
         <aside>
             <h2>
-                <span>
-                    Faça parte da Melhor
-                </span>
+                <span>Faça parte da Melhor</span> Seguradora do país
             </h2>
-            <h2>Asseguradora do país</h2>
             <p>Venha para a DevReboCar e garanta uma maior segurança para o seu veículo automotivo. Além de cobrirmos o seu carro com a maior segurança do mercado, nós também cobrimos o preço da concorrência</p>
-            <form>
-                <input type="email" placeholder="Digite seu e-mail">
+            <form id="signupForm">
+                <input type="email" id="email" placeholder="Digite seu e-mail">
+                <span id="emailError" class="error"></span>
+
                 <input type="password" id="senha" placeholder="Digite sua senha">
-                <input type="submit" value="Enviar">
-                <input type="checkbox" id="mostrarSenha">
-                
+                <span id="senhaError" class="error"></span>
+
+                <button type="button" id="submitBtn">Enviar</button>
+
+                <div id="feedbackMessage"></div>
             </form>
         </aside>
         <article>
-            <img src ="components/img/seguro de carro.png" alt = "carro seguro">
+            <img src="components/img/seguro de carro.png" alt="carro seguro">
         </article>
     </main>
 </body>

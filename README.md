@@ -21,8 +21,7 @@ root/
 ├── index.html              # Página principal
 ├── styles/
 │   └── styles.css          # Estilo da página
-├── scripts/
-│   └── formValidation.js   # Script de validação do formulário
+├── formValidation.js   # Script de validação do formulário
 └── components/img/
     └── seguro de carro.png # Imagem usada na página
 ```
@@ -74,7 +73,7 @@ root/
 ## Personalização
 
 - Alterações no estilo podem ser feitas no arquivo `styles/styles.css`.
-- Regras de validação e lógica podem ser ajustadas no script `scripts/formValidation.js`.
+- Regras de validação e lógica podem ser ajustadas no script `formValidation.js`.
 
 ---
 
